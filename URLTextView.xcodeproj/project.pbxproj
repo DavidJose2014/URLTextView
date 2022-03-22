@@ -11,6 +11,8 @@
 		0B7EDA5227E9C5C30099A5DE /* URLTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7EDA4727E9C5C20099A5DE /* URLTextView.framework */; };
 		0B7EDA5727E9C5C30099A5DE /* URLTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7EDA5627E9C5C30099A5DE /* URLTextViewTests.swift */; };
 		0B7EDA5827E9C5C30099A5DE /* URLTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B7EDA4A27E9C5C20099A5DE /* URLTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B7EDA8627E9E5E40099A5DE /* ADTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7EDA8527E9E5E40099A5DE /* ADTextView.swift */; };
+		0BCB193427EA3B0B003D7FB1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCB193327EA3B0B003D7FB1 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		0B7EDA4B27E9C5C20099A5DE /* URLTextView.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = URLTextView.docc; sourceTree = "<group>"; };
 		0B7EDA5127E9C5C30099A5DE /* URLTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7EDA5627E9C5C30099A5DE /* URLTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTextViewTests.swift; sourceTree = "<group>"; };
+		0B7EDA8527E9E5E40099A5DE /* ADTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADTextView.swift; sourceTree = "<group>"; };
+		0BCB193327EA3B0B003D7FB1 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		0B7EDA4927E9C5C20099A5DE /* URLTextView */ = {
 			isa = PBXGroup;
 			children = (
+				0B7EDA8527E9E5E40099A5DE /* ADTextView.swift */,
+				0BCB193327EA3B0B003D7FB1 /* Extension.swift */,
 				0B7EDA4A27E9C5C20099A5DE /* URLTextView.h */,
 				0B7EDA4B27E9C5C20099A5DE /* URLTextView.docc */,
 			);
@@ -194,6 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BCB193427EA3B0B003D7FB1 /* Extension.swift in Sources */,
+				0B7EDA8627E9E5E40099A5DE /* ADTextView.swift in Sources */,
 				0B7EDA4C27E9C5C20099A5DE /* URLTextView.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +404,7 @@
 		0B7EDA5F27E9C5C30099A5DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -416,6 +425,7 @@
 		0B7EDA6027E9C5C30099A5DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
