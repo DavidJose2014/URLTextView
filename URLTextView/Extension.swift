@@ -29,12 +29,12 @@ extension UITextView {
 
 extension String {
 
-    func substring(with nsrange: NSRange) -> Substring? {
+    public func substring(with nsrange: NSRange) -> Substring? {
         guard let range = Range(nsrange, in: self) else { return nil }
         return self[range]
     }
 
-    var isHTML: Bool {
+    public var isHTML: Bool {
         if isEmpty {
             return false
         }
@@ -42,7 +42,7 @@ extension String {
     }
 
 
-    var html2AttributedString: NSAttributedString? {
+    public var html2AttributedString: NSAttributedString? {
         if !self.isHTML {
             return NSAttributedString(string: self,
                                       attributes:[NSAttributedString.Key.font:
@@ -65,7 +65,7 @@ extension String {
 
 extension Data {
 
-    var html2AttributedString: NSAttributedString? {
+    public var html2AttributedString: NSAttributedString? {
         do {
             let attributeString = try NSAttributedString(data: self,
                                                          options: [.documentType: NSAttributedString.DocumentType.html,
@@ -91,7 +91,7 @@ extension Data {
             return  nil
         }
     }
-    var html2String: String { html2AttributedString?.string ?? "" }
+    public var html2String: String { html2AttributedString?.string ?? "" }
 }
 
 extension NSAttributedString {
@@ -99,7 +99,7 @@ extension NSAttributedString {
     /// Method to convert attributted text to
     /// html format with link and new line support
     /// - Returns: html string
-     func toHtml() -> String? {
+    public func toHtml() -> String? {
 
         var linkArray = [(url: String, range: NSRange)]()
         let range = NSRange(location: 0, length: length)
@@ -140,7 +140,7 @@ extension NSAttributedString {
     ///   - substring: substring part of the string
     ///   - font: Font for the string
     /// - Returns: Attributted string
-     func addHyperLink(
+    public func addHyperLink(
         urlString: String,
         in string: String,
         substring: String,
